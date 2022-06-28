@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="br.org.eldorado.motionsensors.motion.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_capturaFragment"
+            app:destination="@id/capturaFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_treinamentoFragment"
+            app:destination="@id/treinamentoFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_inferenciaFragment"
+            app:destination="@id/inferenciaFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_generateDatasetFragment"
+            app:destination="@id/generateDatasetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="br.org.eldorado.motionsensors.motion.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/capturaFragment"
+        android:name="org.eldorado.ui.captura.CapturaFragment"
+        android:label="captura_fragment"
+        tools:layout="@layout/captura_fragment" />
+    <fragment
+        android:id="@+id/treinamentoFragment"
+        android:name="org.eldorado.ui.treinamento.fragment.TreinamentoFragment"
+        android:label="treinamento_fragment"
+        tools:layout="@layout/treinamento_fragment" />
+    <fragment
+        android:id="@+id/inferenciaFragment"
+        android:name="org.eldorado.ui.inferencia.fragment.InferenciaFragment"
+        android:label="inferencia_fragment"
+        tools:layout="@layout/inferencia_fragment" />
+    <fragment
+        android:id="@+id/generateDatasetFragment"
+        android:name="org.eldorado.ui.datasetsview.fragment.GenerateDatasetFragment"
+        android:label="generate_dataset_fragment"
+        tools:layout="@layout/generate_dataset_fragment" />
+</navigation>

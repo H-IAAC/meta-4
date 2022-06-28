@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.eldorado.ui.captura.CapturaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listviewActivities"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/button_start_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar captura" />
+    </LinearLayout>
+
+</FrameLayout>
